@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buy Bus Tickets</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- daisy UI  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -12,9 +19,138 @@
     />
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .raleway {
+        font-family: "Raleway", sans-serif;
+      }
+      .inter {
+        font-family: "Inter", sans-serif;
+      }
+      .small {
+        font-size: 36px;
+      }
+      @media screen and (max-width: 375px) {
+        .small {
+          font-size: 28px;
+        }
+      }
+      @media screen and (max-width: 320px) {
+        .small {
+          font-size: 20px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <header></header>
+    <header class="max-w-[1173px] mx-auto raleway">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a class="font-extrabold small">P-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg font-medium gap-6">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <button class="btn btn-outline btn-success text-xl font-bold">
+              <span> Bus </span>
+              <span>
+                <img src="./images/bus-icon.png" alt="" srcset="" />
+              </span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <section class="mt-[47px] relative">
+        <div
+          class="hero pt-[70px] pb-[135px] rounded-3xl"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class=""></div>
+          <div class="hero-content text-white text-center">
+            <div class="max-w-[742px]">
+              <h1
+                class="mb-4 md:text-[64px] text-3xl md:leading-[86px] font-extrabold"
+              >
+                End-to-End Travel with
+                <span class="text-[#1DD100]">P Paribahan</span>
+              </h1>
+              <p class="mb-8 max-w-[691px] md:text-lg text-sm inter">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
+              <button class="btn btn-success text-xl font-bold">
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+        <section class="lg:absolute lg:-bottom-14 w-full">
+            <div class="lg:flex grid md:grid-cols-2 gap-6 mt-12 lg:justify-between max-w-[971px] mx-auto ">
+                <div class="flex items-center p-8 gap-4 rounded-3xl  lg:border-t-0 lg:border-x-0 border-[3px] border-[#1DD100] bg-white">
+                  <div class="w-16 h-16">
+                    <img src="./images/people.png" alt="" srcset="" />
+                  </div>
+                  <div class="inter">
+                    <h2 class="text-4xl font-bold">500K +</h2>
+                    <p class="text-lg mt-2">Registered users</p>
+                  </div>
+                </div>
+                <div class="flex items-center p-8 gap-4 rounded-3xl border-b-[3px] border-2 border-[#1DD100] bg-white">
+                  <div class="w-16 h-16">
+                    <img src="./images/people.png" alt="" srcset="" />
+                  </div>
+                  <div class="inter">
+                    <h2 class="text-4xl font-bold">500K +</h2>
+                    <p class="text-lg mt-2">Registered users</p>
+                  </div>
+                </div>
+                <div class="flex items-center p-8 gap-4 rounded-3xl border-b-[3px] border-2 border-[#1DD100] bg-white">
+                  <div class="w-16 h-16">
+                    <img src="./images/people.png" alt="" srcset="" />
+                  </div>
+                  <div class="inter">
+                    <h2 class="text-4xl font-bold">500K +</h2>
+                    <p class="text-lg mt-2">Registered users</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+      </section>
+    </header>
     <main></main>
     <footer></footer>
   </body>
